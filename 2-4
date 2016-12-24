@@ -8,10 +8,10 @@ entity ander is   
   );
 end ander;
 
-architecture behavioral of ander is
+architecture structural of ander is
 
 begin
 
   result <= a and b;
 
-end behavioral;
+end structural;
