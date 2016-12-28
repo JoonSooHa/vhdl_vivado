@@ -9,16 +9,13 @@ entity top is
 end top;
 
 architecture structural of top is
-   
   component ander is    
     Port(
       a,b : in std_logic;
       result : out std_logic
     );
   end component;
-
 begin
-   
   ander_inst_0 : ander port map (
     top_a(0), top_b(0), top_result(0));
   ander_inst_1 : ander port map (
@@ -27,5 +24,4 @@ begin
     top_a(2), top_b(2), top_result(2));
   ander_inst_3 : ander port map (
     top_a(3), top_b(3), top_result(3));
-
 end structural;
