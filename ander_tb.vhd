@@ -11,7 +11,6 @@ architecture Behavioral of ander_tb is
       result : out std_logic
     );
   end component;
-
   signal a,b,result : std_logic;
 begin
   uut : ander port map(a,b,result);
