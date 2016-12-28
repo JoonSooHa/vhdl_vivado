@@ -1,24 +1,21 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity top is
+entity top2 is
   Port(
     top_a,top_b : in std_logic_vector(3 downto 0);
     top_result : out std_logic_vector(3 downto 0)
   );
-end top;
+end top2;
 
-architecture structural of top is
-  
+architecture structural of top2 is
   component ander is    
     Port(
       a,b : in std_logic;
       result : out std_logic
     );
   end component;
-
 begin
-
   ander_inst_0 : ander port map (
     a=>top_a(0),b=>top_b(0),result=>top_result(0));
   ander_inst_1 : ander port map (
@@ -27,5 +24,4 @@ begin
     a=>top_a(2),b=>top_b(2),result=>top_result(2));
   ander_inst_3 : ander port map (
     a=>top_a(3),b=>top_b(3),result=>top_result(3));
-
 end structural;
