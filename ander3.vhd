@@ -1,14 +1,14 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity ander is
+entity ander3 is
   port(
     a,b : in std_logic;
     result : out std_logic
   );
-end ander;
+end ander3;
 
-architecture behavioral of ander is
+architecture behavioral of ander3 is
 begin
   process_ex : process(a,b)
     variable temp : std_logic;
