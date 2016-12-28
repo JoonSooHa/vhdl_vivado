@@ -9,9 +9,6 @@ entity ander is   
 end ander;
 
 architecture structural of ander is
-
 begin
-
   result <= a and b;
-
 end structural;
