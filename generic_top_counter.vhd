@@ -1,15 +1,15 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity generic_top_counter is
+entity counter_top is
   port(
     clk, clr : in std_logic;
     q1 : out std_logic_vector(15 downto 0);
     q2 : out std_logic_vector(31 downto 0)
   );
-end generic_top_counter;
+end counter_top;
 
-architecture Behavioral of generic_top_counter is
+architecture Behavioral of counter_top is
   component counter is
     generic( width : integer );
     port(
