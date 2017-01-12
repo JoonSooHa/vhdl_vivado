@@ -24,6 +24,7 @@ begin
         when "101" => rom_out <= x"a4fb";
         when "110" => rom_out <= x"0993";
         when "111" => rom_out <= x"af34";
+        when others => rom_out <= x"abcd";
       end case; 
     end if;
   end process;
