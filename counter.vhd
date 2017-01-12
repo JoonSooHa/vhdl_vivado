@@ -2,15 +2,15 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-entity generic_counter is
+entity counter is
   generic( width : integer := 16 );
   port(
     clk, clr : in std_logic;
     q : out std_logic_vector(width-1 downto 0)
   );
-end generic_counter;
+end counter;
 
-architecture Behavioral of generic_counter is
+architecture Behavioral of counter is
   signal cnt : std_logic_vector(width-1 downto 0);
 begin
   process(clk,clr)
