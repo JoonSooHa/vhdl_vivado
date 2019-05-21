@@ -21,7 +21,7 @@ begin
                 cnt <= cnt + 1;
                 if cnt = 999 then
                     cnt <= x"0000";
-                    -- 특정시간마다 해야 할 일
+                    -- What to do at a particular time
                 end if;
             end if;
         end if;
