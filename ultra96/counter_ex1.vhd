@@ -17,7 +17,7 @@ begin
         if clr = '1' then
             cnt <= x"0000";
         elsif rising_edge(clk) then
-            cnt <= cnt + 1;
+            cnt <= cnt + 1;
         end if;
     end process;
     q <= cnt;

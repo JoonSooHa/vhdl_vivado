@@ -3,9 +3,9 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity reg16_ex4 is
     port(
-        clk, a : in std_logic;        
+        clk, a : in std_logic; 
         d : out std_logic
-    );  
+    ); 
 end reg16_ex4;
 
 architecture Behavioral of reg16_ex4 is

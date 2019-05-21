@@ -5,7 +5,7 @@ entity ander_tb is
 end ander_tb;
 
 architecture Behavioral of ander_tb is
-    component ander is    
+    component ander is
         port(
             a,b : in std_logic;
             result : out std_logic
@@ -17,12 +17,11 @@ begin
 
     Stimulus : process
     begin
-        a<='0';  b<='0';
-        wait for 200 ns;
-        a<='0';  b<='1';
-        wait for 200 ns;
-        a<='1';  b<='1';
-        wait;
-      end
-    process;
+        a<='0'; b<='0';
+        wait for 200 ns;
+        a<='0'; b<='1';
+        wait for 200 ns;
+        a<='1'; b<='1';
+        wait;
+    end process;
 end Behavioral;

@@ -6,7 +6,7 @@ entity reg16_ex1 is
         clk : in std_logic;
         d : in std_logic_vector(15 downto 0);
         q : out std_logic_vector(15 downto 0)
-    );  
+    );
 end reg16_ex1;
 
 architecture Behavioral of reg16_ex1 is

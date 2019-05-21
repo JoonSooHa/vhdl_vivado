@@ -1,9 +1,9 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity ander is   
+entity ander is
     port(
-        a,b : in std_logic;
+        a,b : in std_logic;
         result : out std_logic
     );
 end ander;

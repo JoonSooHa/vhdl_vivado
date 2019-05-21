@@ -5,13 +5,13 @@ entity flipflop is
     port(
         clk,d : in std_logic;
         q : out std_logic
-    );   
+    );
 end flipflop;
 
 architecture Behavioral of flipflop is
 begin
     process(clk)
-    begin
+    begin
         if rising_edge(clk) then
             q <= d;
         end if;

@@ -17,9 +17,9 @@ begin
             cnt <= x"0000";
         elsif rising_edge(clk) then
             cnt <= cnt + 1;
-    Â Â Â Â Â    if cnt = 999 then
+            if cnt = 999 then
                 cnt <= x"0000";
-    Â Â Â Â Â Â Â      -- íŠ¹ì •ì‹œê°„ë§ˆë‹¤ í•´ì•¼ í•  ì¼
+                -- Æ¯Á¤½Ã°£¸¶´Ù ÇØ¾ßÇÒ ÀÏ
             end if;
         end if;
     end process;

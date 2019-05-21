@@ -19,9 +19,9 @@ begin
         elsif rising_edge(clk) then
             if cnten = '1' then
                 cnt <= cnt + 1;
-                if cnt = 999 then
+                if cnt = 999 then
                     cnt <= x"0000";
-                    -- 특정시간마다 해야 할 일
+                    -- Ư���ð����� �ؾ� �� ��
                 end if;
             end if;
         end if;

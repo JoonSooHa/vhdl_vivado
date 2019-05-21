@@ -4,15 +4,15 @@ use ieee.std_logic_1164.all;
 entity top is
     port(
         top_a,top_b : in std_logic_vector(3 downto 0);
-        top_result : out std_logic_vector(3 downto 0)
+        top_result : out std_logic_vector(3 downto 0)
     );
 end top;
 
 architecture structural of top is
-    component ander is    
+    component ander is
         port(
             a,b : in std_logic;
-              result : out std_logic
+            result : out std_logic
         );
     end component;
 begin
