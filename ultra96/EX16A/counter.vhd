@@ -30,25 +30,12 @@ begin
 
     q <= cnt;
 
-    process(clk, rst, cnt)
+    process(cnt)
     begin
-        if rising_edge(clk) then
-            if rst = '1' then
-                cnt_max <= '0';
-            elsif cnt=99999999 then
-                cnt_max <= '1';
-            else
-                cnt_max <= '0';
-            end if;
+        if cnt=99999999 then
+            cnt_max <= '1';
+        else
+            cnt_max <= '0';
         end if;
     end process;
-
-    -- process(cnt)
-    -- begin
-    --     if cnt=99999999 then
-    --         cnt_max <= '1';
-    --     else
-    --         cnt_max <= '0';
-    --     end if;
-    -- end process;
 end Behavioral;
